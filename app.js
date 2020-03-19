@@ -15,15 +15,15 @@ window.addEventListener('load', ()=> {
             const api = `${proxy}https://api.darksky.net/forecast/425288710ac1760a162e3cc86d7b0558/${lat},${long}`;
             
             fetch(api)
-                .then(response =>{
+                .then(response => {
                     return response.json();
                 })
-                .then(data =>{
+                .then(data => {
                     console.log(data);
+                    locationTimezone.textContent = data.timezone;
                     const { temperature, summary } = data.currently;
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
-                    locationTimezone.textContent = data.timezone;
                 });
         });
     }
