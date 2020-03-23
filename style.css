@@ -10,9 +10,16 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    background: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
     font-family: sans-serif;
     color: white;
+}
+
+.blueBackground {
+    background: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+}
+.redBackground {
+    background: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
 }
 
 .location,

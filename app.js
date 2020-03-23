@@ -31,7 +31,6 @@ window.addEventListener('load', ()=> {
                     temperatureDescription.textContent = summary;
                     locationTimezone.textContent = data.timezone;
 
-                   
                     // set icon
                     setIcons(icon, document.querySelector(".icon"));
                 
@@ -44,11 +43,20 @@ window.addEventListener('load', ()=> {
                             temperatureSpan.textContent = "F";
                             temperatureDegree.textContent = celsius;
                         }
-                    }) 
+                    })
+                    
+                    // set background color
+                    if (celsius < 10) {
+                        document.querySelector("body").className += "blueBackground"; 
+                    }
+                    if (celsius > 22) {
+                        document.querySelector("body").className += "redBackground";
+                    }
                 });
         });
     }
 
+    // use Skycons
     function setIcons(icon, iconID){
         const skycons = new Skycons({"color": "white"});
         const currentIcon = icon.replace(/-/g, "_").toUpperCase();
