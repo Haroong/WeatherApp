@@ -22,16 +22,22 @@ body {
     background: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
 }
 
-.location,
 .temperature {
     height: 38vh;
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5%;
 }
 .temperature {
     flex-direction: column;
+}
+.summary {
+    margin-top: 5%;
+}
+.icon {
+    margin-top: 12%;
 }
 .degree-section {
     display: flex;
