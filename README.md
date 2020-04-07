@@ -1,4 +1,4 @@
-# WeatherWeb
+# WeatherApp
 Simple weather web application
 
 Youtube Javascript 강의를 따라서 만든 프로젝트입니다.
@@ -15,4 +15,4 @@ Youtube Javascript 강의를 따라서 만든 프로젝트입니다.
   섭씨 10도 미만, 섭씨 10도 이상 22도 이하, 섭씨 22도 초과의 세 가지 기준을 두었습니다.
 
 3. 레이아웃 변경<br/>
-   컨텐츠의 배치 를 변경하였습니다.
+   컨텐츠의 배치를 변경하였습니다.
