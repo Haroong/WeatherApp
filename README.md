@@ -1,4 +1,4 @@
-# WeatherApp
+# WeatherWeb
 Simple weather web application
 
 Youtube Javascript 강의를 따라서 만든 프로젝트입니다.
